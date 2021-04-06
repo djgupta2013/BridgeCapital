@@ -46,7 +46,6 @@ class TransactionListActivity : AppCompatActivity() {
             }catch (e: Exception){
                 e.printStackTrace()
             }
-
         }
         transactionViewModel.allAmount.observe(this) {
             it?.apply {
