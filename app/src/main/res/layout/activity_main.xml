@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.MainActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/grey_lite">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bridge2Capital"
+            android:textSize="@dimen/sp_20"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+        <EditText
+            android:id="@+id/edtPartyName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_35"
+            android:layout_marginTop="@dimen/dp_15"
+            android:background="@drawable/edt_round_corner"
+            android:hint="@string/party_name"
+            android:paddingStart="@dimen/dp_15"
+            android:paddingEnd="@dimen/dp_15"
+            android:singleLine="true"
+            android:textSize="@dimen/sp_14"/>
+
+        <EditText
+            android:id="@+id/edtPartyNumber"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_35"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@drawable/edt_round_corner"
+            android:paddingStart="@dimen/dp_15"
+            android:paddingEnd="@dimen/dp_15"
+            android:hint="@string/party_number"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textSize="@dimen/sp_14"/>
+
+        <EditText
+            android:id="@+id/edtAmount"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_35"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@drawable/edt_round_corner"
+            android:paddingStart="@dimen/dp_15"
+            android:paddingEnd="@dimen/dp_15"
+            android:hint="@string/amount"
+            android:inputType="number"
+            android:maxLength="8"
+            android:textSize="@dimen/sp_14"/>
+
+        <Switch
+            android:id="@+id/switchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/full_amount_received"
+            android:paddingStart="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:checked="true"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <EditText
+            android:id="@+id/edtPaidAmount"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_35"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@drawable/edt_round_corner"
+            android:paddingStart="@dimen/dp_15"
+            android:paddingEnd="@dimen/dp_15"
+            android:hint="@string/paid_amount"
+            android:inputType="number"
+            android:maxLength="8"
+            android:textSize="@dimen/sp_14"
+            android:visibility="gone"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivAttachment"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_100"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_10"
+            android:src="@drawable/ic_add_photo_24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_2"
+            android:text="@string/add_attachment"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCashIn"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_40"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:text="@string/cash_in"/>
+
+            <Button
+                android:id="@+id/btnCashOut"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_40"
+                android:layout_weight="1"
+                android:text="@string/cash_out"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginEnd="@dimen/dp_10"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnViewAllTransaction"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_15"
+            android:text="@string/view_all_transactions"
+            android:textAllCaps="false"
+            android:layout_marginStart="@dimen/dp_10"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

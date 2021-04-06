@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">BridgeCapital</string>
+    <string name="party_number">Party number</string>
+    <string name="full_amount_received">Full amount received</string>
+    <string name="amount">Amount</string>
+    <string name="paid_amount">Paid Amount</string>
+    <string name="party_name">Party name</string>
+    <string name="add_attachment">Add Attachment</string>
+    <string name="image_file">Image file</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="cash_in">cash-in</string>
+    <string name="cash_out">cash-out</string>
+    <string name="view_all_transactions">View All Transactions</string>
+    <string name="pending_amount">Pending Amount</string>
+    <string name="total_expense">Total Expense:</string>
+    <string name="total_cash">Total cash:</string>
+    <string name="total_amount">Total Amount:</string>
+    <string name="all_transaction_for_the_day">All Transaction for the day</string>
+    <string name="data_not_available">Data not available</string>
+</resources>
