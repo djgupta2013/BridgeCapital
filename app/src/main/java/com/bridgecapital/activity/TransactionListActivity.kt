@@ -49,21 +49,21 @@ class TransactionListActivity : AppCompatActivity() {
         }
         transactionViewModel.allAmount.observe(this) {
             it?.apply {
-                Log.e("total", it.toString())
+                //Log.e("total", it.toString())
                 tvTotalAmount.text = "${getString(R.string.total_amount)} $it"
                 tvTotalAmount.visibility = View.VISIBLE
             }
         }
         transactionViewModel.allCashInAmount.observe(this) {
             it?.apply {
-                Log.e("total Income>>> ", it.toString())
+                //Log.e("total Income>>> ", it.toString())
                 tvCashIn.text = "${getString(R.string.total_cash)} $it"
                 tvCashIn.visibility = View.VISIBLE
             }
         }
         transactionViewModel.allCashOutAmount.observe(this) {
             it?.apply {
-                Log.e("total Expense>>> ", it.toString())
+                //Log.e("total Expense>>> ", it.toString())
                 tvCashOut.text = "${getString(R.string.total_expense)} $it"
                 tvCashOut.visibility = View.VISIBLE
             }
